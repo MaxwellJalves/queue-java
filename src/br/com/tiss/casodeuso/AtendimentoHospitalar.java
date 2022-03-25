@@ -1,4 +1,4 @@
-package tiss.casodeuso;
+package br.com.tiss.casodeuso;
 
 import enums.TiposDeGuiaTiss;
 

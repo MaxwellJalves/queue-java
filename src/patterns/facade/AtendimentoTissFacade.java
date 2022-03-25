@@ -2,7 +2,7 @@ package patterns.facade;
 
 import enums.TiposDeGuiaTiss;
 import model.Pessoa;
-import tiss.casodeuso.AtendimentoHospitalar;
+import br.com.tiss.casodeuso.AtendimentoHospitalar;
 
 public class AtendimentoTissFacade {
     private final String ENCAMINHAR_PARA_O_FINANCEIRO = " Realizado encaminhamento para o contas a pagar, assim que o processamento for concluido entraremos em contato.";
