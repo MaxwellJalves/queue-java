@@ -7,7 +7,7 @@ public class ContaDTO {
     private Integer numeroDaAgencia;
     private String telefone;
 
-    public  ContaDTO(String nome, Integer numeroConta, Integer numeroDaAgencia,String telefone){
+    public ContaDTO(String nome, Integer numeroConta, Integer numeroDaAgencia, String telefone) {
 
         this.nome = nome;
         this.numeroDaAgencia = numeroDaAgencia;
@@ -15,6 +15,7 @@ public class ContaDTO {
         this.telefone = telefone;
 
     }
+
     public String getNome() {
         return nome;
     }
@@ -27,12 +28,12 @@ public class ContaDTO {
         return numeroDaConta;
     }
 
-    public String getTelefone(){
-        return  telefone;
+    public String getTelefone() {
+        return telefone;
     }
 
     @Override
     public String toString() {
-        return String.format("Beneficiario : %s , Nº Conta: %d  , Agencia : %d\nNúmero de contato: (081)  %s",getNome(),getNumeroDaConta(),getNumeroDaAgencia(),getTelefone());
+        return String.format("Beneficiario : %s , Nº Conta: %d  , Agencia : %d\nNúmero de contato: (081)  %s", getNome(), getNumeroDaConta(), getNumeroDaAgencia(), getTelefone());
     }
 }

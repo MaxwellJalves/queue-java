@@ -1,5 +1,8 @@
 package br.com.stream.exercicio;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 import java.util.Vector;
 
 public class Atividade04 {
@@ -12,12 +15,13 @@ public class Atividade04 {
 
     public static void main(String[] args) {
         //Crie um vector e insira 3 registros
-        Vector<String> vetor = new Vector<>();
+        Collection<String> vetor = new Vector<>();
         vetor.add("Primeiro elemento");
         vetor.add("segundo elemento");
         vetor.add("Terceiro componente");
         //Imprima os dados
         vetor.forEach(System.out::println);
+
         //Exiba o tamanho do vetor
         System.out.printf("\n\nTamanho da lista : %d \n\n ------------------- \n",vetor.size());
         //Remova um objeto pelo nome

@@ -1,10 +1,10 @@
 package br.com.stream.exercicio.atividade05interface;
 
-public class ContaImplements extends ContaDTO  implements Conta, Usuario {
+public class ContaImplements extends ContaDTO implements Conta, Usuario {
 
 
     public ContaImplements(String nome, Integer numeroConta, Integer numeroDaAgencia, String telefone) {
-        super(nome, numeroConta, numeroDaAgencia,telefone);
+        super(nome, numeroConta, numeroDaAgencia, telefone);
     }
 
     @Override
