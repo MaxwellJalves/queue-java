@@ -20,7 +20,7 @@ public class Atividade09 {
        var conversor = datas.stream()
              .sorted()
              .collect(Collectors.toList());
-        System.out.println("{====Datas ordenadas=======}");
+         System.out.println("{====Datas ordenadas=======}");
        conversor.forEach(System.out::println);
 
         System.out.println("{====Retorna todos os registros com a data atual=======}");
