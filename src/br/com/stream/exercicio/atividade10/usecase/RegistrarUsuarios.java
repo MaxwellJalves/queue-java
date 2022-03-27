@@ -2,12 +2,11 @@ package br.com.stream.exercicio.atividade10.usecase;
 
 import br.com.stream.exercicio.atividade10.Usuario;
 
-import java.nio.charset.StandardCharsets;
-import java.text.DateFormat;
 import java.time.LocalDate;
 import java.time.chrono.ChronoLocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 import java.util.stream.Collectors;
 
 public class RegistrarUsuarios {
