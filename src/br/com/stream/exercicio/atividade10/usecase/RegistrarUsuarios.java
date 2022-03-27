@@ -2,11 +2,13 @@ package br.com.stream.exercicio.atividade10.usecase;
 
 import br.com.stream.exercicio.atividade10.Usuario;
 
+import java.nio.charset.StandardCharsets;
+import java.text.DateFormat;
 import java.time.LocalDate;
 import java.time.chrono.ChronoLocalDate;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class RegistrarUsuarios {
     //Todo ordenar por nome e data
@@ -32,7 +34,8 @@ public class RegistrarUsuarios {
 
         System.out.println("\n-----------------Ordenando Usuarios por data de nascimento---------------");
 
-        registroDeUsuarios.stream().filter(i -> LocalDate.now().isAfter(i.getDataDeNascimento())).forEach(System.out::println);
+        var filtro =registroDeUsuarios.stream().filter(i -> LocalDate.now().isAfter(i.getDataDeNascimento())).collect(Collectors.toList());
+
 
         System.out.println("\n-----------------Ordenando Usuarios por data de nascimento---------------");
         registroDeUsuarios.stream()
@@ -45,5 +48,19 @@ public class RegistrarUsuarios {
 
         System.out.println("\n-----------------Ordenando por nome---------------");
         registroDeUsuarios.stream().sorted((o1,o2) -> String.CASE_INSENSITIVE_ORDER.compare(o1.getNome(),o2.getNome())).forEach(System.out::println);
+
+
+
+
+
+    }
+
+
+}
+class  CompareString implements Comparator<Usuario>{
+    @Override
+    public int compare(Usuario o1, Usuario o2) {
+
+        return String.CASE_INSENSITIVE_ORDER.compare(o1.getNome(),o2.getNome());
     }
 }

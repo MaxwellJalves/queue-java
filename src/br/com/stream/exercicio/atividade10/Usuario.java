@@ -1,6 +1,7 @@
 package br.com.stream.exercicio.atividade10;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Usuario {
 
@@ -21,7 +22,7 @@ public class Usuario {
     }
 
     public String toString(){
-        return String.format("Nome : %s  Data_de_nascimento: %s",getNome(),getDataDeNascimento());
+        return String.format("Nome : %s  Data_de_nascimento: %s",getNome(), getDataDeNascimento().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
     }
 
 
